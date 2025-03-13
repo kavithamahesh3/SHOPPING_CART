@@ -89,7 +89,9 @@ products.forEach(
   ({ name, id, price, category }) => {
     dessertCards.innerHTML += `
       <div class="dessert-card">
-        <h2>${name}</h2>
+      <img src="img/img${id}.webp" class="product-image">  
+      <h2>${name}</h2>
+        
         <p class="dessert-price">$${price}</p>
         <p class="product-category">Category: ${category}</p>
         <button 
